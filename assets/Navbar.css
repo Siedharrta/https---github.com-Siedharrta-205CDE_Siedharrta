@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: lavender;
+}
+
+p {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.icon {
+  position: relative;
+  min-width: 50px;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+  margin-right: 20px;
+  padding-top: 5px;
+}
+
+.icon ion-icon {
+  position: relative;
+  font-size: 1.75rem;
+  z-index: 10;
+}
+
+.nav {
+  position: absolute;
+  padding: 1em 3em;
+  background-color: black;
+  inset: 0;
+  margin: auto;
+  height: 6em;
+  width: 100%;
+  display: flex;
+  margin-top: 0px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9c5d1;
+  background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
+}
+
+.btn {
+  background: transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+  color:#523142;
+  outline: none;
+  height: 65px;
+  width: 150px;
+  transition: padding 300ms, content 1s 1s;
+}
+
+.btn.active {
+  padding-right: 13em;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn.dashboard.active::after {
+  content: "Dashboard";
+  position: absolute;
+  display: inline;
+  font-size: 1rem;
+  font-weight: 600;
+  bottom: 22px;
+  right: 25px;
+  animation: appear ease-out 250ms
+}
+
+.btn.home.active::after {
+  content: "Home";
+  position: absolute;
+  display: inline;
+  font-size: 1rem;
+  font-weight: 600;
+  bottom: 22px;
+  right: 50px;
+  animation: appear ease-out 250ms;
+}
+
+.btn.upload.active::after {
+  content: "Upload";
+  position: absolute;
+  display: inline;
+  font-size: 1rem;
+  font-weight: 600;
+  bottom: 22px;
+  right: 45px;
+  animation: appear ease-out 250ms;
+}
+
+.btn.profile.active::after {
+  content: "Profile";
+  position: absolute;
+  display: inline;
+  font-size: 1rem;
+  font-weight: 600;
+  bottom: 22px;
+  right: 50px;
+  animation: appear ease-out 250ms
+}
+
+.btn.logout.active::after {
+  content: "Log Out";
+  position: absolute;
+  display: inline;
+  font-size: 1rem;
+  font-weight: 600;
+  bottom: 22px;
+  right: 40px;
+  animation: appear ease-out 250ms
+}

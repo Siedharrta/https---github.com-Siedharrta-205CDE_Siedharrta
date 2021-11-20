@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+h1 {
+  position: absolute;
+  top: 3em;
+  left: 14em;
+  font-size: 32px;
+}
+
+h1:before,
+h1:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+table {
+  position: absolute;
+  top: 180px;
+  font-family: 'Montserrat', sans-serif;
+  border-collapse: collapse;
+  width: 98.5%;
+  height: 100%;
+}
+
+td, th {
+  font-weight: bold;
+  border: 20px solid white;
+  text-align: center;
+  padding: 10px;
+  background-color: #cdc1ff;
+  background-image: linear-gradient(316deg, #cdc1ff 0%, #e5d9f2 74%);
+}
+
+a:link, a:visited {
+  background-color: transparent;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
